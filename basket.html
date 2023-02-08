@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link rel="icon" href="favicon.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/basket.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="login-line">
+            <p>
+            <div class="nav-item dropdown language-change-container">
+                <a class="nav-link dropdown-toggle language-change" data-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">English (EN)</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Russian (RU)</a>
+                    <a class="dropdown-item" href="#">Italian (IT)</a>
+                    <a class="dropdown-item" href="#">Japanese (JA)</a>
+                </div>
+            </div>
+            |
+            <a class="login-link" href="signup.html">Log in</a>
+            </p>
+        </div>
+        <div class="first-line">
+            <a class="main-a" href="index.html">
+                <div class="logo">
+                    <img src="favicon.png" width="80px" alt="Логотип сайта">
+                    <div class="logo-text">
+                        <p class="logo-p">Musicality</p><br>
+                        <p class="logo-p text-smaller">Feel the harmony</p>
+                    </div>
+                </div>
+            </a>
+            <form>
+                <input type="text" class="finder" placeholder="Enter product name">
+                <button type="submit" class="find-button"><img src="assets/find.png" width="50px"></button>
+            </form>
+            <div class="attributes">
+                <a href="#"><img src="assets/basket.png" alt="Basket"></a>
+                <a href="#"><img src="assets/heart.png" alt="Wanted"></a>
+                <a href="profile.html"><img src="assets/account.png" alt="Login"></a>
+            </div>
+        </div>
+        <nav class="container nav-div nav">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
+                <div class="col-3">
+                    <a class="nav-link" href="index.html">Home</a>
+                </div>
+                <div class="col-3">
+                    <a class="nav-link" href="catalog.html">Catalog</a>
+                </div>
+                <div class="col-3">
+                    <a class="nav-link active" href="#">Discounts</a>
+                </div>
+                <div class="col-3">
+                    <a class="nav-link" href="#">Delivery</a>
+                </div>
+            </div>
+        </nav>
+        <!--
+        <div class="nav-div">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalog.html">Catalog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Delivery</a>
+        </li>
+      </ul>
+    </div>
+     -->
+    </header>
+    <main>
+        <div class="container-main">
+            <h2 class="mt-3 mb-3 basket-h">Basket</h2>
+            <div class="basket-container">
+                <div class="item-container">
+                    <div class="item mb-4">
+                        <img src="assets/drum.jpg" class="mr-5" width="150px" height="150px">
+                        <div class="item-info">
+                            <h3 class="mb-3">African drum</h3>
+                            <button type="button" class="btn btn-primary item-btn mr-2 minus">-</button>
+                            <span class="how-much">1</span>
+                            <button type="button" class="btn btn-primary item-btn ml-2 plus">+</button>
+                            <div class="pricer mt-2">
+                                $<span class="price-for-item mr-2">500</span> * <span class="ml-2 how-much-2">1</span>
+                                <div class="form-check">
+                                    <input class="form-check-input include-box" type="checkbox" value="" id="include1"
+                                        checked>
+                                    <label class="form-check-label" for="include1">
+                                        Include
+                                    </label>
+                                    <button type="button" class="delete-button">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-4">
+                        <img src="assets/trumpet.jpg" class="mr-5" width="150px" height="150px">
+                        <div class="item-info">
+                            <h3 class="mb-3">Trumpet</h3>
+                            <button type="button" class="btn btn-primary item-btn mr-2 minus">-</button>
+                            <span class="how-much">1</span>
+                            <button type="button" class="btn btn-primary item-btn ml-2 plus">+</button>
+                            <div class="pricer mt-2">
+                                $<span class="price-for-item mr-2">700</span> * <span class="ml-2 how-much-2">1</span>
+                                <div class="form-check">
+                                    <input class="form-check-input include-box" type="checkbox" value=""
+                                        id="include2" checked>
+                                    <label class="form-check-label" for="include2">
+                                        Include
+                                    </label>
+                                    <button type="button" class="delete-button">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-form mb-5">
+                    <h3>Your basket</h3>
+                    <p><span class="all-goods">2</span> goods</p>
+                    <p>Price: $<span class="total-price">1200</span></p>
+                    <button type="button" class="btn btn-primary by-btn">Buy</button>
+                    <form class="card-info w-100 mt-3 opacity-0" action="#">
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="cardnumber" placeholder="Номер карты">
+                                    <label for="cardnumber">Card number</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="cvv" placeholder="CVV-код">
+                                    <label for="cvv">CVV</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mb-3 w-100">
+                                    <input type="text" class="form-control" id="name"
+                                        placeholder="Имя и фамилия держателя карты">
+                                    <label for="name">First name and Surname</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mb-3 w-100">
+                                    <input type="text" class="form-control w-100" id="address"
+                                        placeholder="Имя и фамилия держателя карты">
+                                    <label for="address">Address</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="button" class="btn btn-primary w-100">Order</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-2">
+        <div class="footer-a">
+            <section>
+                <h4>For customers</h4>
+                <ul>
+                    <li><a href="#">How to make an order</a></li>
+                    <li><a href="#">Pickup points</a></li>
+                    <li><a href="#">Refund</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Communications</a></li>
+                    <li><a href="#">Payment details</a></li>
+                    <li><a href="#">Address</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Social networks</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tik tok</a></li>
+                </ul>
+            </section>
+        </div>
+        <p>All rights belong to me and only me</p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicality</title>
+    <link rel="icon" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="login-line">
+            <p>
+            <div class="nav-item dropdown language-change-container">
+                <a class="nav-link dropdown-toggle language-change" data-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">English (EN)</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Russian (RU)</a>
+                    <a class="dropdown-item" href="#">Italian (IT)</a>
+                    <a class="dropdown-item" href="#">Japanese (JA)</a>
+                </div>
+            </div>
+            |
+            <a class="login-link" href="signup.html">Log in</a>
+            </p>
+        </div>
+        <div class="first-line">
+            <a class="main-a" href="index.html">
+                <div class="logo">
+                    <img src="favicon.png" width="80px" alt="Логотип сайта">
+                    <div class="logo-text">
+                        <p class="logo-p">Musicality</p><br>
+                        <p class="logo-p text-smaller">Feel the harmony</p>
+                    </div>
+                </div>
+            </a>
+            <form>
+                <input type="text" class="finder" placeholder="Enter product name">
+                <button type="submit" class="find-button"><img src="assets/find.png" width="50px"></button>
+            </form>
+            <div class="attributes">
+                <a href="basket.html"><img src="assets/basket.png" alt="Basket"></a>
+                <a href="#"><img src="assets/heart.png" alt="Wanted"></a>
+                <a href="profile.html"><img src="assets/account.png" alt="Login"></a>
+            </div>
+        </div>
+        <nav class="container nav-div nav">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
+                <div class="col-3">
+                    <a class="nav-link text-center" href="index.html">Home</a>
+                </div>
+                <div class="col-3">
+                    <a class="nav-link text-center" href="#">Catalog</a>
+                </div>
+                <div class="col-3">
+                    <a class="nav-link text-center" href="#">Discounts</a>
+                </div>
+                <div class="col-3">
+                    <a class="nav-link text-center" href="#">Delivery</a>
+                </div>
+            </div>
+        </nav>
+        <!--
+        <div class="nav-div">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalog.html">Catalog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Delivery</a>
+        </li>
+      </ul>
+    </div>
+     -->
+    </header>
+    <main>
+        <div class="container">
+            <h1>Sign up</h1>
+            <form>
+                <div class="row g-3 mb-5">
+                    <div class="col-md-4 flex-direction-column">
+                        <label class="form-label" for="name">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="col-md-4 flex-direction-column">
+                        <label class="form-label" for="surname">Surname</label>
+                        <input type="text" id="surname" class="form-control" placeholder="Enter your surname">
+                    </div>
+                    <div class="col-md-4 flex-direction-column">
+                        <label class="form-label" for="birth">Birth</label>
+                        <input type="date" id="birth" class="form-control">
+                    </div>
+                    <div class="col-md-4 flex-direction-column">
+                        <label class="form-label" for="mail">Email</label>
+                        <input type="email" id="mail" class="form-control" placeholder="example@mail.ru">
+                    </div>
+                    <div class="col-md-4 flex-direction-column">
+                        <label class="form-label" for="number">Telephone number</label>
+                        <input type="tel" id="number" class="form-control" placeholder="+7(999)9999999">
+                    </div>
+                    <div class="col-md-4 flex-direction-column">
+                        <label class="form-label" for="password">Password</label>
+                        <input type="password" id="password" class="form-control" placeholder="*****">
+                    </div>
+                    <div class="col-md-4 button-submit">
+                        <button type="submit" class="btn btn-primary w-100">
+                            <a href="profile.html" class="to-profil">Log in</a>
+                        </button>
+                    </div>
+                </div>
+            </form>
+    </main>
+    <footer class="mt-2">
+        <div class="footer-a">
+            <section>
+                <h4>For customers</h4>
+                <ul>
+                    <li><a href="#">How to make an order</a></li>
+                    <li><a href="#">Pickup points</a></li>
+                    <li><a href="#">Refund</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Communications</a></li>
+                    <li><a href="#">Payment details</a></li>
+                    <li><a href="#">Address</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Social networks</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tik tok</a></li>
+                </ul>
+            </section>
+        </div>
+        <p>All rights belong to me and only me</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
